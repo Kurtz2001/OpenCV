@@ -1,0 +1,12 @@
+basic
+g++ ReadWriteImages.C -o ReadWriteImages.o -g -std=c++11 `pkg-config --cflags --libs opencv`
+./ReadWriteImages.o
+
+// NB: pbl in splashing display --> copy a posteriori
+scp -r azzolini@lxplus.cern.ch:/afs/cern.ch/user/a/azzolini/scratch0/test_CplusplusCode/CloudyGoldenGate_transformed.jpg /Users/azzolini/work/Learn/cplusplus/NVIDIA_PixelIntensityValue/.
+
+// dumping error log into a file in a csh environment
+( g++ ReadWriteImages.C -o ReadWriteImages.o -g -std=c++11 `pkg-config --cflags --libs opencv` ) > error.log
+
+// dumping error log into a file in a bash environment
+g++ ReadWriteImages.C -o ReadWriteImages.o -g -std=c++11 `pkg-config --cflags --libs opencv` 2  > error.log
