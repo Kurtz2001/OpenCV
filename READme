@@ -1,4 +1,4 @@
-basic
+1;2cbasic
 g++ ReadWriteImages.C -o ReadWriteImages.o -g -std=c++11 `pkg-config --cflags --libs opencv`
 ./ReadWriteImages.o
 
@@ -10,3 +10,7 @@ scp -r azzolini@lxplus.cern.ch:/afs/cern.ch/user/a/azzolini/scratch0/test_Cplusp
 
 // dumping error log into a file in a bash environment
 g++ ReadWriteImages.C -o ReadWriteImages.o -g -std=c++11 `pkg-config --cflags --libs opencv` 2  > error.log
+
+
+
+unset SSH_ASKPASS
